@@ -1,0 +1,41 @@
+*cycles* is the amount of times it will run through the function
+*speed* is the time that it pauses for after setting the rgb values
+*step* is the amount added to the rgb value until it hits 0 or 255
+
+Default arguments are shown for each function.
+
+
+kill(duration = 0)
+
+strobeWhite(duration = 3, speed = 0.1)
+strobeRed(duration = 3, speed = 0.1)
+strobeGreen(duration = 3, speed = 0.1)
+strobeBlue(duration = 3, speed = 0.1)
+strobeCustom(red, green, blue, duration = 3, speed = 0.1
+
+rgbStrobe(speed, cycles)
+rgbJumpBuild(startSpeed, stopSpeed, cycles)
+
+white(duration, brightness = 255)
+red(duration, brightness = 255)
+orange(duration, brightness = 255)
+yellow(duration, brightness = 255)
+green(duration, brightness = 255)
+blue(duration, brightness = 255)
+purple(duration, brightness = 255)
+rgbSet(red, green, blue, duration = 5)
+
+whiteSoftBuild(speed, step)
+redSoftBuild(speed, step)
+greenSoftBuild(speed, step)
+blueSoftBuild(speed, step)
+
+whiteSoftFade(speed, step)
+redSoftFade(speed, step)
+greenSoftFade(speed, step)
+blueSoftFade(speed, step)
+
+rgbCrossFade(speed, cycles, step)
+
+rgbSoftFade(speed, cycles, step)
+rgbSoftBuild(speed, cycles, step)
