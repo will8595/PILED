@@ -1,7 +1,7 @@
 # !/usr/bin/env python
-# Version 1.0.2
+# Version 1.1
 # ========== Change Log ==========
-# * Fixed code error in rgbStrobe()
+# + Added rgbInstance()
 
 import pigpio
 import time
@@ -206,6 +206,12 @@ def rgbSet(redBrightness, greenBrightness, blueBrightness, duration=5):
     pi.set_PWM_dutycycle(GREEN, greenBrightness)
     pi.set_PWM_dutycycle(BLUE, blueBrightness)
     time.sleep(duration)
+
+
+def rgbInstance(red, green, blue):
+    pi.set_PWM_dutycycle(RED, red)
+    pi.set_PWM_dutycycle(GREEN, green)
+    pi.set_PWM_dutycycle(BLUE, blue)
 
 
 def whiteSoftBuild(speed, step):
