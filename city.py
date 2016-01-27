@@ -46,8 +46,8 @@ while (end - start) < length:
         b = 25
     elif when <= 54000:
         r = 255
-        g = 200
-        b = 75
+        g = 255
+        b = 255
     elif when <= 61200:
         r = 255
         g = 125
