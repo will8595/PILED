@@ -71,6 +71,7 @@ while (end - start) < length:
     else:
         when = 0
     effects.rgbInstance(r, g, b)
+    time.sleep(5)
     diff2 = time.time()
     end = time.time()
 effects.kill()
